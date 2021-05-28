@@ -20,7 +20,7 @@
  ## step 4: Thresholding and hysteresis
 
  Divide the thin_edge image matrix in the strong, weak and intermediate sections. Set all strong pixles to 255, set all weak pixels to 0.
- For intermediate pixles, set only those pixle as strong having a brighter neighbour pixle. THaving brighter neighbour pixle means that the pixle is in continuation with the strong edge.
+ For intermediate pixles, set only those pixle as strong having a brighter neighbour pixle. Having a brighter neighbour pixle means that the pixle is in continuation with the strong edge.
  
   ![](results/final_result.png)
  
