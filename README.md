@@ -1,5 +1,7 @@
 # 03_canny_edge_detection
- Goal: To implement the canny edge detector from the scratch. To understand the variation in result with different data types like uint8, int32 and float16
+ ## Goal:
+ To implement the canny edge detector from the scratch. 
+ To understand the variation in result with different data types like uint8, int32 and float16
  
  ## Step 1: Gaussian blurr
  Apply the gaussian blur to the image (Result has sigma =1.4 and ksize = 5)
