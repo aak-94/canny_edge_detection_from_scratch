@@ -22,13 +22,13 @@ def canny_edge(img):
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     gray2= gray.astype('int32')
     plt.imshow(gray,cmap='gray')
-    plt.title("original")
+    plt.title("original"), plt.xticks([]),plt.yticks([])
     plt.show()
     detector = cannyEdgeDetector(gray2, gray, sigma=3, ksize=5,upper_threshold=0.2,lower_threshold=0.18)#lowthreshold=0.09, highthreshold=0.17)
     result_img = detector.Execute_canny()
     
     plt.imshow(result_img,cmap = 'gray')
-    plt.title("final Result")
+    plt.title("final Result"), plt.xticks([]),plt.yticks([])
     plt.show()
     
     cv2.imshow('final',result_img)

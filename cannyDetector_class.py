@@ -26,7 +26,7 @@ class cannyEdgeDetector:
         smoothened_img= ndimage.filters.convolve(self.img, g_filter)
         smoothened_img2= ndimage.filters.convolve(self.img2, g_filter)
         plt.imshow(smoothened_img,cmap = 'gray')
-        plt.title("Gaussian")
+        plt.title("Gaussian"), plt.xticks([]),plt.yticks([])
         plt.show()
         return (smoothened_img,smoothened_img2)
     
@@ -49,10 +49,10 @@ class cannyEdgeDetector:
         
         plt.subplot(1,2,1)
         plt.imshow(gradient,cmap = 'gray')
-        plt.title("soble x & Y as int32")
+        plt.title("soble x & Y as int32"), plt.xticks([]),plt.yticks([])
         plt.subplot(1,2,2)
         plt.imshow(gradient2,cmap = 'gray')
-        plt.title("soble x & Y of uint8")
+        plt.title("soble x & Y of uint8"), plt.xticks([]),plt.yticks([])
         plt.show()
         
         return (gradient,theta)
@@ -92,7 +92,7 @@ class cannyEdgeDetector:
         thin_edge =img
         plt.figure()
         plt.imshow(thin_edge,cmap = 'gray')
-        plt.title("thin_edge")
+        plt.title("thin_edge"), plt.xticks([]),plt.yticks([])
         plt.show()
         return thin_edge
     
