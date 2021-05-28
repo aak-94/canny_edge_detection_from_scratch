@@ -1,8 +1,7 @@
 # 03_canny_edge_detection
  ## Goal:
- To implement the canny edge detector from the scratch. 
- 
- To understand the variation in result with different data types like uint8, int32 and float16
+ - To implement the canny edge detector from the scratch. 
+ - To understand the variation in result with different data types like uint8, int32 and float16
  
  ## Step 1: Gaussian blurr
  Apply the gaussian blur to the image (Result has sigma =1.4 and ksize = 5)
@@ -25,7 +24,12 @@
  Divide the thin_edge image matrix in the strong, weak and intermediate sections. Set all strong pixles to 255, set all weak pixels to 0.
  For intermediate pixles, set only those pixle as strong having a brighter neighbour pixle. Having a brighter neighbour pixle means that the pixle is in continuation with the strong edge.
  
+
   ![](results/final_result.png)
+ 
+  ## Usage Guideline for the repo:
+ - Download the repo
+ - run Implementaion.py
  
  ## References
 [canny-edge-detection-step-by-step](https://towardsdatascience.com/canny-edge-detection-step-by-step-in-python-computer-vision-b49c3a2d8123)
