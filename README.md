@@ -1,4 +1,4 @@
-# 03_canny_edge_detection
+# 03_canny_edge_detection from scratch
  ## Goal:
  - To implement the canny edge detector from the scratch. 
  - To understand the variation in result with different data types like uint8, int32 and float16
